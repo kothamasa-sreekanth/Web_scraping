@@ -102,7 +102,7 @@ def web_scrapper(web_url, f_name):
 
             all_data.append([name, price, rating, reviews, features, link])
             found_on_page += 1
-            print(f"  ✔ {name[:55]:<55} | {price} | {rating}")
+            print(f"   {name[:55]:<55} | {price} | {rating}")
 
         # ── Check next page ───────────────────────────
         next_btn = soup.find('a', class_='s-pagination-next')
@@ -128,7 +128,7 @@ def web_scrapper(web_url, f_name):
 if __name__ == '__main__':
 
     print("=" * 50)
-    print("   🛒 Oppo Mobiles Scraper — Amazon India")
+    print("    Oppo Mobiles Scraper — Amazon India")
     print("=" * 50)
     url = input("\nPress Enter to use default OR paste your URL: ").strip()
     fn = input("File name (without .csv): ").strip()
